@@ -62,7 +62,6 @@ header h1, h2{
     box-shadow: 10px 10px 5px lightsteelblue;
     color: white;
     font-size: 125%;
-    filter: grayscale(100%);
 }
 .halfFeatured:hover {
     animation: featuredAnim 0.5s;
@@ -84,4 +83,11 @@ header h1, h2{
 @keyframes featuredAnim {
     from {filter: grayscale(100%);}
     to {filter: grayscale(0%);}
+}
+.description {
+    position: absolute;
+    left: 17.5%;
+}
+.betaWIP {
+    background: repeating-linear-gradient(45deg, yellow 0px, yellow 10px, gray 10px, gray 20px);
 }
