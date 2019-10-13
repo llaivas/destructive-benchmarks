@@ -1,0 +1,97 @@
+body{
+    font-family: "IBM Plex Sans", sans-serif;
+    z-index: 0;
+    background-color: black;
+    margin: 0;
+    color: white;
+}
+header {
+    background-color: rgb(25, 25, 25);
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    font-size: 75%;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header li {
+    display: inline-block;
+}
+header li:hover {
+    background: linear-gradient(90deg, red, yellow);
+}
+.active {
+    background: linear-gradient(90deg, red, yellow);   
+    color: black; 
+}
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: inline-block;
+}
+header a:hover {
+    color: black;
+}
+
+#backgroundVideo {
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+}
+.title {
+    font-size: 300%;
+    float: left;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    z-index: 2;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+.title h1 {
+    float: right;
+    margin: 0;
+    margin-right: 7.5%;
+}
+.title a {
+    color: white;
+}
+.featureList {
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+    overflow: hidden;
+    text-align: center;
+    background: linear-gradient(90deg, #aa4b6b, #6b6b83, #3b8d99);
+}
+.featureList li {
+    display: inline;
+    padding: 15px;
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.reviews {
+    margin: 0px 25px 0px 25px;
+}
+.quotes {
+    float: left
+}
+.quotes img {
+    float: right;
+    height: 200px;
+}
+.quotes p {
+    height: 200px;
+    font-size: 150%;
+}
